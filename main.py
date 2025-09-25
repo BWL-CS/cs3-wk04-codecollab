@@ -1,4 +1,4 @@
-# A list to store recipes
+# A data structure to store recipes
 recipes = []
 
 # Function to add a recipe
@@ -24,8 +24,8 @@ def view_recipes():
         print("No recipes available yet.")
         return
     
-    for i, recipe in enumerate(recipes, 1):
-        print(f"\nRecipe {i}: {recipe['recipe name']}")
+    for index, recipe in enumerate(recipes, 1):
+        print(f"\nRecipe {index}: {recipe['recipe name']}")
         print(f"  Ingredients: {', '.join(recipe['ingredients'])}")
         print(f"  Cook time: {recipe['cook time']} minutes")
 
